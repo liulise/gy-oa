@@ -1,8 +1,7 @@
 const path = require('path');
 const NODE_ENV = process.env.NODE_ENV || 'development';
-const isDev = NODE_ENV === 'development';
 const webpack = require('webpack');
-const manifest = require('./vendor-manifest.json');
+const isDev = NODE_ENV === 'development';
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -38,10 +37,8 @@ module.exports = {
       }
     ],
     plugins: [
-        new webpack.DllReferencePlugin({
-          manifest,
-          context: __dirname
-        })
+      new webpack.HotModuleReplacementPlugin(),
+      new webpack.NamedModulesPlugin() //用户名替代id
     ]
   },
 

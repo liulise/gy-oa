@@ -1,4 +1,16 @@
 {
-  "presets": ["env", "react"],
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["ie >= 9"]
+        },
+        "modules": false,
+        "debug": true,
+        "useBuiltIns": true
+      }
+    ],
+    "react"],
   "plugins":  ["transform-runtime"]
 }

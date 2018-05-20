@@ -3,7 +3,7 @@ const config = require('./config');
 const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 // -----------------------------------------------------------
 
@@ -73,5 +73,17 @@ module.exports = {
     alias: { src: config.rootPath },
     modules: [config.rootPath, 'node_modules']
   },
-  devtool: config.devtool
+  devtool: config.devtool,
+
+  ...(config.isDev ? {
+    devServer: {
+      hot: true,
+      open: true,
+      inline: true,
+      compress: true,
+      host: 'localhost',
+      port: config.port,
+      contentBase: path.resolve(__dirname, 'dist'),
+    }
+  } : {})
 };

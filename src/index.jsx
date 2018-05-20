@@ -1,3 +1,4 @@
+import 'src/assets/js/polyfill';
 import 'src/assets/scss/index.scss';
 
 import React from 'react';
