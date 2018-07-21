@@ -1,0 +1,68 @@
+html {
+  font: 12px 'Helvetica Neue',Helvetica,Arial,'Microsoft Yahei','Hiragino Sans GB','Heiti SC','WenQuanYi Micro Hei',sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  border: 1px solid #ddd;
+  color: #aaa;
+  padding: 10px;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+/**
+ * 原子类 --  margin left
+ */
+.atomic-ml0 {
+  margin-left: 0;
+}
+
+.atomic-ml10 {
+  margin-left: 10px;
+}
+
+.atomic-ml38 {
+  margin-left: 38px;
+}
+
+/**
+ * 原子类 --  margin right
+ */
+.atomic-mr0 {
+  margin-right: 0;
+}
+
+.atomic-mr10 {
+  margin-right: 10px;
+}
+
+/**
+ * 原子类 --  margin top
+ */
+.atomic-mt10 {
+  margin-top: 10px;
+}
+
+/**
+ * 原子类 --  text-align
+ */
+.atomic-textLeft {
+  text-align: left;
+}
+
+.atomic-textRight {
+  text-align: right;
+}
+
+.atomic-textCenter {
+  text-align: center;
+}
+

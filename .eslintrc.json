@@ -52,6 +52,17 @@
     "no-console": 0,
     "global-require": 0,
     "brace-style": [2, "allman", { "allowSingleLine": true }],
-    "react/prefer-stateless-function": 0
+    "react/prefer-stateless-function": 0,
+    "linebreak-style": 0,
+    "indent": 0,
+    "no-tabs": 0,
+    "react/jsx-indent": 0,
+    "react/jsx-tag-spacing": 0,
+    "react/jsx-first-prop-new-line": 0,
+    "react/jsx-indent-props": 0,
+    "react/jsx-max-props-per-line": 0,
+    "jsx-a11y/label-has-for": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "react/jsx-closing-bracket-location": 0
   }
 }
